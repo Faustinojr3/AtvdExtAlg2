@@ -114,21 +114,42 @@ switch (atividadeVetores)
 
     case "9":
         // 9.	Elabore um algoritmo que crie dois vetores A e B de 10 elementos e, a partir deles,
-        //  crie um vetor C, composto pela uniáo dos ele- mentos de A e B, dispostos em ordem cres- cente, exibindo o resultado.
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+        //  crie um vetor C, composto pela uniáo dos elementos de A e B, dispostos em ordem crescente, exibindo o resultado.
+
+        double[] A = new double[10];
+        double[] B = new double[10];
+        double[] C = new double[20];
+        int i = 0;
+        int j = 10;
+        Random aleatorio = new Random();
+
+
+        for (i < A.Length; i++;)
+        {
+            j++;
+            A[i] = aleatorio.Next(1, 50);
+            B[i] = aleatorio.Next(1, 50);
+
+            C[i]= A[i];
+            C[j]= B[i];
+
+            if(){
+                
+            }
+ 
+
+       }
+
+
+
+
+
+
+
+
+
+
+
         break;
 
 
