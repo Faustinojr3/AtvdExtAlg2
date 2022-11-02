@@ -1,5 +1,6 @@
 ﻿using Atividade_Vetores;
 string atividadeVetores;
+using System; 
 
 Console.WriteLine("Digite a Atividade desejada:");
 atividadeVetores = Console.ReadLine();
@@ -14,42 +15,9 @@ int atividadeVetores = 0;
 switch (atividadeVetores)
 {
     case "2":
-        //  2.	Dadas as temperaturas que foram regis- tradas, diariamente, durante uma semana, deseja-se determinar em quantos dias desta semana a temperatura esteve acima da média. A solução para este problema envolve os se- guintes passos:
-        // a)	Obter os valores das temperaturas.
-        // b)	Calcular a média desses valores.
-        // c)	Verificar quantos deles sáo maiores que a média.
 
 
-        Console.WriteLine("Seja bem vindo ao software para verificação das maiores temperaturas de acordo com a media semanal.\r\n ");
-        double soma;
-        double media;
-
-        double[] temperaturas = new double[7];
-        double[] acimaMedia = new double[7];
-
-        System.Console.WriteLine("Por favor insira os valores semanal (lembrando, é necessário a inserção de 7 valores):");
-        for (int i = 0; i < temperaturas.Lengh; i++)
-        {
-            Console.WriteLine("Temperatura Nº " + i + ":");
-            atividadeVetores[i] = Convert.ToDouble32(Console.ReadLine());
-            soma = atividadeVetores[i] + soma;
-
-
-        }
-        media = soma / 7;
-        System.Console.WriteLine("Os valores encontrados acima da media são:");
-        for (int a = 0; a < 7; a++)
-        {
-            if (temperaturas[a] > media)
-            {
-                acimaMedia[a] = temperaturas[a];
-                System.Console.WriteLine(Convert.ToString(acimaMedia[a]));
-
-            }
-
-
-
-        }
+        Atividade2();
 
 
 
