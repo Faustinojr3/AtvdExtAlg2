@@ -16,8 +16,43 @@ switch (atividadeVetores)
 {
     case "2":
 
+        Console.WriteLine("Seja bem vindo ao software para verificação das maiores temperaturas de acordo com a media semanal.\r\n ");
+        double soma = 0.0;
+        double media = 0.0;
 
-        Atividade2();
+
+        double[] temperaturas = new double[8];
+        double[] acimaMedia = new double[8];
+
+        System.Console.WriteLine("Por favor insira os valores semanal (lembrando, é necessário a inserção de 7 valores):");
+        for (int i = 1; i < temperaturas.Length; i++)
+        {
+
+
+            Console.WriteLine("Temperatura Nº " + i + ":");
+            temperaturas[i] = Convert.ToDouble(Console.ReadLine());
+            soma = temperaturas[i] + soma;
+
+
+        }
+
+
+        media = soma / 3;
+
+
+        System.Console.WriteLine("Os valores encontrados acima da media são:");
+        for (int a = 0; a < temperaturas.Length; a++)
+        {
+            if (temperaturas[a] > media)
+            {
+                Console.WriteLine(temperaturas[a]);
+            }
+        }
+
+
+
+
+
 
 
 
@@ -29,8 +64,11 @@ switch (atividadeVetores)
         // c)	Os nomes dos meses do ano.
         System.Console.WriteLine("Esse software tem como objetivo salvar as vogais do alfabeto. Salvar a altura de 10 pessoas. E os nomes dos meses do ano");
         string[] vogais = new string[5];
+
         double[] alturas = new double[10];
+
         string[] meses = new string[12];
+
 
         System.Console.WriteLine("Vogais:");
         vogais[0] = "a";
@@ -39,24 +77,57 @@ switch (atividadeVetores)
         vogais[3] = "o";
         vogais[4] = "u";
 
-        System.Console.WriteLine("Altura das Pessoas \r\n Insira os 10 valores necessários");
-        for (int i = 0; i < alturas.Length; i++)
+
+        for (int vog = 0; vog < vogais.Length; vog++)
         {
-            System.Console.WriteLine("Valor nº " + i + ":");
-            alturas[i] = Convert.ToDouble32(ConsoleReadLine());
+            Console.WriteLine(vogais[vog]);
+
+        }
+
+        // altura 
+
+        System.Console.WriteLine("Altura das Pessoas \r\n Insira os 10 valores necessários, em centimetros");
+        for (int alt = 0; alt < alturas.Length; alt++)
+        {
+            int alt1 = alt + 1;
+            System.Console.WriteLine("Valor nº " + alt1 + ":");
+            alturas[alt] = Convert.ToDouble(Console.ReadLine());
 
         }
         System.Console.WriteLine("Valores inseridos:");
-        for (int i = 0; i < alturas.Length; i++)
+        for (int alt = 0; alt < alturas.Length; alt++)
         {
-            System.Console.WriteLine(alturas[i]);
+            System.Console.WriteLine(alturas[alt] + "cm");
+
+        }
+
+        //nome dos meses 
+
+        Console.WriteLine("\r\nOs meses do ano são:");
+        meses[0] = "Janeiro";
+        meses[1] = "Fevereiro";
+        meses[2] = "Março";
+        meses[3] = "Maio";
+        meses[4] = "Abril";
+        meses[5] = "Junho";
+        meses[6] = "Julho";
+        meses[7] = "Agosto";
+        meses[8] = "Setembro";
+        meses[9] = "Outubro";
+        meses[10] = "Novembro";
+        meses[11] = "Desembro";
+
+        for (int mes = 0; mes < meses.Length; mes++)
+        {
+
+
+            Console.WriteLine(meses[mes]);
 
         }
 
 
-        break;
 
-case "7":
+    case "7":
         // 7.	Codifique um algoritmo Histograma, que exiba um histograma da variação da temperatura durante a semana. Por exemplo, se as  temperaturas  forem  19O C,   21 °C,    25°C, 22OC,  20°C,  17°C  e  l 5°C,  de  domingo  a sábado, respectivamente, o algoritmo deve- rá exibir:
         // D   :   ■■■■■■■■■■■■■■■■■■■
         // S   : ■■■■■■■■■■■■■■■■■M■■■
@@ -71,13 +142,26 @@ case "7":
 
     case "8":
 
-        // 8.	Faça um algoritmo que construa dois veto- res A e B de 10 elementos e, a partir de- les, crie um vetor C, composto pela soma dos elementos, sendo: C[1] A[1]
-        // + B[10], C[2)   A[2) + B[9],
-        // C[3] A[3] + B[8)etc.
+        // 8.	Faça um algoritmo que construa dois veto- res A e B de 10 elementos e, a partir de- les, crie um vetor C, composto pela soma dos elementos, sendo: C[1]= A[1] + B[10], C[2) =  A[2) + B[9],
+        // C[3]= A[3] + B[8)etc.
+
+        double A []= new double [10];
+        double B[] = new double[10];
+        double C[] = new double[20]; 
+
+        for(int a=0; a<A.Length; a++)
+        {
+            A[a] = Convert.ToDouble(Console.Readline());
 
 
-
-
+        }
+        
+        
+        
+        
+        
+        
+        
         break;
 
     case "9":
