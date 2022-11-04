@@ -56,11 +56,11 @@ switch (atividadeVetores)
 
         break;
 
-    case "7":
+case "7":
         // 7.	Codifique um algoritmo Histograma, que exiba um histograma da variação da temperatura durante a semana. Por exemplo, se as  temperaturas  forem  19O C,   21 °C,    25°C, 22OC,  20°C,  17°C  e  l 5°C,  de  domingo  a sábado, respectivamente, o algoritmo deve- rá exibir:
         // D   :   ■■■■■■■■■■■■■■■■■■■
         // S   : ■■■■■■■■■■■■■■■■■M■■■
-        // T : ■■■■■■■■■■■■■■■■■■■■■■■■■
+        // T : ■■■■■■■■■■■■■■■■■■■■■■■■■    
         // Suponha que as temperaturas sejam todas positivas e que nenhuma seja maior que 80OC. Dica: crie uma rotina que exiba uma linha, com uma quantidade de caracteres de tamanho proporcional a temperatura
 
 
