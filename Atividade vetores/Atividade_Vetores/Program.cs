@@ -1,6 +1,6 @@
 ﻿using Atividade_Vetores;
 string atividadeVetores;
-using System; 
+
 
 Console.WriteLine("Digite a Atividade desejada:");
 atividadeVetores = Console.ReadLine();
@@ -218,10 +218,10 @@ System.Console.WriteLine(dias[hist]+ cp);
         {
             
             int c2 = 9;
-            c2--;
+           
 
             C[c]= A[c]+B[c2];
-
+             c2--;
         }
         
        //      --Resultados  Vetor C--
