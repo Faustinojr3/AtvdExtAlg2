@@ -271,16 +271,43 @@ Console.WriteLine(" Os recultados encontrados no vetor C são: \r\n"+p+ "º Valo
 
 //      --Valores do Vetor C--
 
-  for(int d=0; d==9; d++){
+for(int d=0; d==9; d++){
 
-int d2=10;
+new double [] comparação= new double [20];
+int d1=1;
+
+comparação[d]=A[D];
+comparação[d]=b[D];
+
+
+}
+
+   for(int d=0; d==9; d++){
+new double [] comparação= new double [20];
+
+
+int d1=1;
+in d3=2;
 d2++;
 
+//Organizando A
+if(A[d]>D[1]){
+if(D)
+D[d1]=A[d]
 
- D[d]= A[d];
-  D[d2]= B[d];
-    
-  }
+
+}
+
+
+
+}
+
+ 
+}
+
+  
+
+  
 
  //      --Tratamento valores de C--
 
