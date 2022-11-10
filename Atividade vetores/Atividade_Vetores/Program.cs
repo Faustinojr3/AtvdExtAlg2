@@ -276,63 +276,64 @@ for (int c = 0; c < C.Length; c++)
 
         }
 
-//      --Valores do Vetor C--
+        //      --Valores do Vetor C--
 
-for(int d=0; d==9; d++){
+        for (int d = 0; d =9; d++)
+        {
+            int E = 10;
 
-new double [] comparação= new double [20];
-int d1=1;
+            D[d] = A[d];
+            D[E]=B[d];
 
-comparação[d]=A[D];
-comparação[d]=b[D];
+            E++;
+        }
 
-
-}
-
-   for(int d=0; d==9; d++){
-new double [] comparação= new double [20];
-
-
-int d1=1;
-in d3=2;
-d2++;
-
-//Organizando A
-if(A[d]>D[1]){
-if(D)
-D[d1]=A[d]
-
-
-}
-
-
-
-}
-
- 
-}
-
-  
-
-  
-
- //      --Tratamento valores de C--
-
-
-
-
-
-
-
-
-
-
-
-
-
-      //      --Resultados  Vetor C--
         
-for(int c=0; c<D.Length; c++){
+            Console.WriteLine("OS valores do vetor C são: "  );
+        for (int d = 0; d > d.Length; d++)
+        {
+
+       Console.WriteLine(D[d]);
+
+        }
+
+
+
+
+
+
+
+
+            //      --Tratamento valores de C--
+
+
+
+            int i, j, min, x;
+for (i = 1; i <= ; i++)
+{
+    min = i;
+    for (j = i + 1; j <= n; j++)
+    {
+        if (D[j] < D[min])
+            min = j;
+    }
+    x = vet[min];
+    vet[min] = vet[i];
+    vet[i] = x;
+}
+
+
+
+
+
+
+
+
+
+
+//      --Resultados  Vetor C--
+
+for (int c=0; c<D.Length; c++){
 p=1;
 p++;
 Console.WriteLine(" Os recultados encontrados no vetor C são: \r\n"+p+ "º Valor encontrado é:\r\n"+ D[c]);
