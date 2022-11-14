@@ -34,7 +34,7 @@ do {
     qp = Convert.ToInt32(Console.ReadLine());
     cad.valorproduto = new double[qp];
     cad.nomeproduto = new string[qp];
-
+    
     for (int i = 0; i < qp; i++)
     {
         Console.WriteLine("Digite o Nome do Produto");
@@ -89,7 +89,15 @@ while (aux!= null)
 
         Console.WriteLine("Valor do Produto " + (i + 1));
         Console.WriteLine(aux.valorproduto[i]);
+
+        double soma=0.0;
+        soma = aux.valorproduto[i]+ soma;
+
     }
+    double media= 0.0 ;
+    media = soma/qp;
+Console.WriteLine("Total a ser pago é de: R$" +Soma);
+Console.WriteLine("A media dos valores do produto é de: R$" +media);
     // 9 o aux recebe o proximo elemento, até ser nulo
     aux = aux.prox;
 }
