@@ -138,23 +138,24 @@ switch (atividadeVetores)
 
 Console.WriteLine("Seja bem vindo ao historagrama por favor insira as tamperaturas dos seguintes dias:");
 
-int [] historagrama = new int [7];
-string [] dias= new string[7];
+int[] historagrama = new int[7];
+string[] dias = new string[7];
 
 
-dias [0]="Domingo: ";
-dias [1]="Segunda: ";
-dias [2]="Terça: ";
-dias [3]="Quarta: ";
-dias [4]="Quinta: ";
-dias [5]="Sexta: ";
-dias [6]="Sábado: ";
+dias[0] = "Domingo: ";
+dias[1] = "Segunda: ";
+dias[2] = "Terça: ";
+dias[3] = "Quarta: ";
+dias[4] = "Quinta: ";
+dias[5] = "Sexta: ";
+dias[6] = "Sábado: ";
 
 //--------------Adicionar valores historiograma---------------------------
-for(int hist = 0; hist<dias.Length; hist++){
+for (int hist = 0; hist < dias.Length; hist++)
+{
 
-Console.WriteLine(dias[hist]);
-historagrama[hist]= Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine(dias[hist]);
+    historagrama[hist] = Convert.ToInt32(Console.ReadLine());
 }
 
 
@@ -162,20 +163,24 @@ historagrama[hist]= Convert.ToDouble(Console.ReadLine());
 
 
 //-------------Convertendo para string e demostrando o historiograma----------------------
-for(int hist = 0; hist<historagrama.Length; hist++){
+for (int hist = 0; hist < historagrama.Length; hist++)
+{
 
-if(historagrama[hist]>= 80 && historagrama[hist]>0) {
+    if (historagrama[hist] <= 80 && historagrama[hist] > 0)
+    {
 
 
 
-string cp= "";
-// cp.PadRight (Quantidadde minima de caraceres, 'Simbolo a ser usado para completar os requisitos mínimos')
-cp= cp.PadRight(historagrama[hist], '■');
-System.Console.WriteLine(dias[hist]+ cp);
+        string cp = "";
+        // cp.PadRight (Quantidadde minima de caraceres, 'Simbolo a ser usado para completar os requisitos mínimos')
+        cp = cp.PadRight(historagrama[hist],'°');
+        System.Console.WriteLine(dias[hist] + cp);
+
+    }
 
 }
 
-}
+
 
         break;
 
@@ -184,52 +189,54 @@ System.Console.WriteLine(dias[hist]+ cp);
 ////////////////////////////////////////////////////////////////////////////////////////////////
     case "8":
 
-        // 8.	Faça um algoritmo que construa dois veto- res A e B de 10 elementos e, a partir de- les, crie um vetor C, composto pela soma dos elementos, sendo: C[1]= A[1] + B[10], C[2) =  A[2) + B[9],
-        // C[3]= A[3] + B[8)etc.
+  // 8.	Faça um algoritmo que construa dois veto- res A e B de 10 elementos e, a partir de- les, crie um vetor C, composto pela soma dos elementos, sendo: C[1]= A[1] + B[10], C[2) =  A[2) + B[9],
+// C[3]= A[3] + B[8)etc.
 
-        double [] A = new double [10];
-        double [] B = new double[10];
-        double [] C = new double[10]; 
-
-
+double[] A = new double[10];
+double[] B = new double[10];
+double[] C = new double[10];
+int a1 = 0;
+int b1 = 0;
 //      --Valores do Vetor A--
-        for(int a=0; a<A.Length; a++)
-        {
-            int a1 = 1;
-            a1++;
-            Console.WriteLine(" VALORES VETOR A \r\n"+a1+ "º Valor" );
-            A[a] = Convert.ToDouble(Console.Readline());
+for (int a = 0; a < A.Length; a++)
+{
+   
+    a1++;
+    Console.WriteLine(" VALORES VETOR A \r\n" + a1 + "º Valor ");
+    A[a] = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("\r\n");
+
+}
+//      --Valores do Vetor B--
+for (int b = 0; b < B.Length; b++)
+{
+
+    b1++;
+
+    Console.WriteLine(" VALORES VETOR B \r\n" + b1 + "º Valor \r\n");
+    B[b] = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("\r\n");
 
 
-        }
- //      --Valores do Vetor B--
-         for(int b=0; b<B.Length; b++)
-        {
-            int b1 = 1;
-            b1++;
-
-            Console.WriteLine(" VALORES VETOR A \r\n"+b1+ "º Valor" );
-            B[b] = Convert.ToDouble(Console.Readline());
-
-
-        }
+}
 //      --Valores do Vetor C--
-        for(int c=0; c<C.Length; c++)
-        {
-            
-            int c2 = 9;
-           
+for (int c = 0; c < C.Length; c++)
+{
 
-            C[c]= A[c]+B[c2];
-             c2--;
-        }
-        
-       //      --Resultados  Vetor C--
-        
-for(int c=0; c<C.Length; c++){
-p=1;
-p++;
-Console.WriteLine(" Os recultados encontrados no vetor C são: \r\n"+p+ "º Valor encontrado é:\r\n"+ C[c]);
+    int c2 = 9;
+
+
+    C[c] = A[c] + B[c2];
+    c2--;
+}
+
+//      --Resultados  Vetor C--
+
+for (int c = 0; c < C.Length; c++)
+{
+   int p = 1;
+    p++;
+    Console.WriteLine(" Os recultados encontrados no vetor C são: \r\n" + p + "º Valor encontrado é:\r\n" + C[c]);
 
 
 }
@@ -269,63 +276,64 @@ Console.WriteLine(" Os recultados encontrados no vetor C são: \r\n"+p+ "º Valo
 
         }
 
-//      --Valores do Vetor C--
+        //      --Valores do Vetor C--
 
-for(int d=0; d==9; d++){
+        for (int d = 0; d =9; d++)
+        {
+            int E = 10;
 
-new double [] comparação= new double [20];
-int d1=1;
+            D[d] = A[d];
+            D[E]=B[d];
 
-comparação[d]=A[D];
-comparação[d]=b[D];
+            E++;
+        }
 
-
-}
-
-   for(int d=0; d==9; d++){
-new double [] comparação= new double [20];
-
-
-int d1=1;
-in d3=2;
-d2++;
-
-//Organizando A
-if(A[d]>D[1]){
-if(D)
-D[d1]=A[d]
-
-
-}
-
-
-
-}
-
- 
-}
-
-  
-
-  
-
- //      --Tratamento valores de C--
-
-
-
-
-
-
-
-
-
-
-
-
-
-      //      --Resultados  Vetor C--
         
-for(int c=0; c<D.Length; c++){
+            Console.WriteLine("OS valores do vetor C são: "  );
+        for (int d = 0; d > d.Length; d++)
+        {
+
+       Console.WriteLine(D[d]);
+
+        }
+
+
+
+
+
+
+
+
+            //      --Tratamento valores de C--
+
+
+
+            int i, j, min, x;
+for (i = 1; i <= ; i++)
+{
+    min = i;
+    for (j = i + 1; j <= n; j++)
+    {
+        if (D[j] < D[min])
+            min = j;
+    }
+    x = vet[min];
+    vet[min] = vet[i];
+    vet[i] = x;
+}
+
+
+
+
+
+
+
+
+
+
+//      --Resultados  Vetor C--
+
+for (int c=0; c<D.Length; c++){
 p=1;
 p++;
 Console.WriteLine(" Os recultados encontrados no vetor C são: \r\n"+p+ "º Valor encontrado é:\r\n"+ D[c]);
@@ -342,65 +350,67 @@ Console.WriteLine(" Os recultados encontrados no vetor C são: \r\n"+p+ "º Valo
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     case "10":
+    
+
         //  10.	A partir de cinco vetores de cinco elementos inteiros, fornecidos pelo usuario, crie uma matriz de cinco linhas e colunas e exiba
         //   seu conteúdo.
-        System.Console.WriteLine("Esse software tem como objetivo ler os valores inseridos em cinco vetores, e colocalos dentro de uma matriz");
+       Console.WriteLine("Esse software tem como objetivo ler os valores inseridos em cinco vetores, e colocalos dentro de uma matriz");
 
-        double[] vetor1 = new double[5];
-        double[] vetor2 = new double[5];
-        double[] vetor3 = new double[5];
-        double[] vetor4 = new double[5];
-        double[] vetor5 = new double[5];
+double[] vetor1 = new double[5];
+double[] vetor2 = new double[5];
+double[] vetor3 = new double[5];
+double[] vetor4 = new double[5];
+double[] vetor5 = new double[5];
 
-        double[][] vetores = new double[5][5];
-        int i = 0;
-        int j = 0;
-
-        for (i < vetor1.Length; i++;)
-        {
-            System.Console.WriteLine("Insira os valores do vetor 1 \r\n valor nº " + i + ":");
-            vetor1[i] = Convert.ToDouble32(Console.ReadLine());
-            vetores[1][i] = vetor1[i];
-        }
-
-        for (i < vetor2.Length; i++;)
-        {
-            System.Console.WriteLine("Insira os valores do vetor 2\r\n valor nº " + i + ":");
-            vetor2[i] = Convert.ToDouble32(Console.ReadLine());
-            vetores[2][i] = vetor2[i];
-        }
-
-        for (i < vetor3.Length; i++;)
-        {
-            System.Console.WriteLine("Insira os valores do vetor 3 \r\n valor nº " + i + ":");
-            vetor3[i] = Convert.ToDouble32(Console.ReadLine());
-            vetores[3][i] = vetor3[i];
-        }
-
-        for (i < vetor4.Length; i++;)
-        {
-            System.Console.WriteLine("Insira os valores do vetor 4  \r\n valor nº " + i + ":");
-            vetor4[i] = Convert.ToDouble32(Console.ReadLine());
-            vetores[4][i] = vetor4[i];
-        }
-
-        for (i < vetor5.Length; i++;)
-        {
-            System.Console.WriteLine("Insira os valores do vetor 5 \r\n valor nº " + i + ":");
-            vetor5[i] = Convert.ToDouble32(Console.ReadLine());
-            vetores[5][i] = vetor5[i];
-        }
-
-        System.Console.WriteLine("Os valores inseridos foram:");
-        for (j < vetores.Length; j++;)
-        {
-            for (i < vetores.Length; i++;)
-            {
-                System.Console.WriteLine(vetores[j][i]);
-            }
+double[,] vetores = new double [5,5];
 
 
-        }
+for (int i = 0;  i < vetor1.Length; i++)
+{
+    System.Console.WriteLine("Insira os valores do vetor 1 \r\n valor nº " + i + ":");
+    vetor1[i] = Convert.ToDouble(Console.ReadLine());
+    vetores[0,i] = vetor1[i];
+}
+
+for (int i = 0; i < vetor2.Length; i++)
+{
+    System.Console.WriteLine("Insira os valores do vetor 2\r\n valor nº " + i + ":");
+    vetor2[i] = Convert.ToDouble(Console.ReadLine());
+    vetores[1,i] = vetor2[i];
+}
+
+for (int i = 0; i < vetor3.Length; i++)
+{
+    System.Console.WriteLine("Insira os valores do vetor 3 \r\n valor nº " + i + ":");
+    vetor3[i] = Convert.ToDouble(Console.ReadLine());
+    vetores[2,i] = vetor3[i];
+}
+
+for (int i=0;i < vetor4.Length; i++)
+{
+    System.Console.WriteLine("Insira os valores do vetor 4  \r\n valor nº " + i + ":");
+    vetor4[i] = Convert.ToDouble(Console.ReadLine());
+    vetores[3,i] = vetor4[i];
+}
+
+for (int i = 0; i < vetor5.Length; i++)
+{
+    System.Console.WriteLine("Insira os valores do vetor 5 \r\n valor nº " + i + ":");
+    vetor5[i] = Convert.ToDouble(Console.ReadLine());
+    vetores[4, i] = vetor5[i];
+}
+
+System.Console.WriteLine("Os valores inseridos foram:");
+for (int j=0; j< 5; j++)
+{
+    for (int i=0; i  < 5; i++)
+    {
+        Console.WriteLine(vetores[j,i]);
+    }
+    
+
+}
+
 
 
         break;
