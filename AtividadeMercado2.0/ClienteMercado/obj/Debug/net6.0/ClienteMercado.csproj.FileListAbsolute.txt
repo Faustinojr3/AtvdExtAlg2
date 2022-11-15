@@ -13,3 +13,10 @@ C:\Users\1986393\Documents\algoritimos\ClienteMercado\obj\Debug\net6.0\ClienteMe
 C:\Users\1986393\Documents\algoritimos\ClienteMercado\obj\Debug\net6.0\ref\ClienteMercado.dll
 C:\Users\1986393\Documents\algoritimos\ClienteMercado\obj\Debug\net6.0\ClienteMercado.pdb
 C:\Users\1986393\Documents\algoritimos\ClienteMercado\obj\Debug\net6.0\ClienteMercado.genruntimeconfig.cache
+C:\Users\Faustino\Documents\GitHub\AtvdExtAlg2\AtividadeMercado2.0\ClienteMercado\obj\Debug\net6.0\ClienteMercado.csproj.AssemblyReference.cache
+C:\Users\Faustino\Documents\GitHub\AtvdExtAlg2\AtividadeMercado2.0\ClienteMercado\obj\Debug\net6.0\ClienteMercado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Faustino\Documents\GitHub\AtvdExtAlg2\AtividadeMercado2.0\ClienteMercado\obj\Debug\net6.0\ClienteMercado.AssemblyInfoInputs.cache
+C:\Users\Faustino\Documents\GitHub\AtvdExtAlg2\AtividadeMercado2.0\ClienteMercado\obj\Debug\net6.0\ClienteMercado.AssemblyInfo.cs
+C:\Users\Faustino\Documents\GitHub\AtvdExtAlg2\AtividadeMercado2.0\ClienteMercado\obj\Debug\net6.0\ClienteMercado.csproj.CoreCompileInputs.cache
+C:\Users\Faustino\Documents\GitHub\AtvdExtAlg2\AtividadeMercado2.0\ClienteMercado\obj\Debug\net6.0\ClienteMercado.dll
+C:\Users\Faustino\Documents\GitHub\AtvdExtAlg2\AtividadeMercado2.0\ClienteMercado\obj\Debug\net6.0\ClienteMercado.pdb

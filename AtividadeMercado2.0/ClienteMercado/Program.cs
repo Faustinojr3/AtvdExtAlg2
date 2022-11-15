@@ -41,8 +41,9 @@ do {
         cad.nomeproduto[i] = Console.ReadLine();
         Console.WriteLine("Digite o Valor do Produto");
         cad.valorproduto[i] = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("oiii");  
     }
-
+Console.WriteLine("oii");   
     //4 ver se a lista tem inicio
     if (inicio == null)
     {
@@ -65,6 +66,8 @@ do {
         lista = cad;
         lista.prox = null;
     }
+ Console.WriteLine("oi");    
+
     Console.WriteLine("Para cadastrar mais, digite 1");
     Console.WriteLine("Para sair, digite 0");
     op = Convert.ToInt32(Console.ReadLine());
